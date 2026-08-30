@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "心愿地图",
+    "slug": "wishmap",
+    "version": "0.1.0",
+    "platforms": [
+      "ios"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "wishmap",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.leahlin.wishmap"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "@rnmapbox/maps"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "15397c61-ac8d-4ea9-a4c8-f2c37e9e70bd"
+      }
+    },
+    "owner": "leahlins-team"
+  }
+}
