@@ -1,19 +1,20 @@
-import { Link } from 'expo-router';
+import { router } from 'expo-router';
 import { Pressable, StyleSheet, Text } from 'react-native';
 
 import { useLocalization } from '@/localization';
 import { useAppTheme } from '@/theme';
 
-export function AddEntryLink() {
+export function AddEntryLink({ compact = false }: { compact?: boolean }) {
   const theme = useAppTheme();
   const { t } = useLocalization();
   return (
-    <Link href="/add-entry" asChild>
-      <Pressable
+    <Pressable
         accessibilityRole="button"
         accessibilityLabel={t('navigation.addEntry')}
+        onPress={() => router.push('/add-entry')}
         style={({ pressed }) => [
           styles.button,
+          compact && styles.compact,
           {
             backgroundColor: theme.colors.accent,
             opacity: pressed ? 0.78 : 1,
@@ -21,10 +22,9 @@ export function AddEntryLink() {
         ]}
       >
         <Text style={[theme.typography.metadata, styles.label, { color: theme.colors.onAccent }]}>
-          + {t('navigation.addEntry')}
+          {compact ? '+' : `+ ${t('navigation.addEntry')}`}
         </Text>
-      </Pressable>
-    </Link>
+    </Pressable>
   );
 }
 
@@ -36,5 +36,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 999,
   },
+  compact: { width: 44, paddingHorizontal: 0 },
   label: { fontWeight: '600' },
 });

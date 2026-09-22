@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "心愿地图",
-    "slug": "wishmap",
+    "name": "所见",
+    "slug": "drift-cultural-atlas",
     "version": "0.1.0",
     "platforms": [
-      "ios"
+      "ios",
+      "web"
     ],
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

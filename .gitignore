@@ -42,3 +42,11 @@ Thumbs.db
 
 # Local scaffold / scratch directories
 foundation-scaffold/
+
+# Local design tooling and media exports
+.impeccable/
+build/
+out/
+*.mp4
+*.mov
+*.zip

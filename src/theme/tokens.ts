@@ -30,6 +30,11 @@ const lightColors = {
   separator: '#D9DEDA',
   accent: '#356A5A',
   onAccent: '#FFFFFF',
+  tagSurface: '#E5EEE8',
+  tagText: '#355A4C',
+  topicSurface: '#ECE8E1',
+  topicText: '#655847',
+  iconSurface: '#EEF1EE',
   overlay: 'rgba(18, 24, 20, 0.18)',
   disabled: '#AEB4B0',
 } as const;
@@ -43,6 +48,11 @@ const darkColors = {
   separator: '#353C37',
   accent: '#76A996',
   onAccent: '#10231D',
+  tagSurface: '#243A31',
+  tagText: '#A9CEBD',
+  topicSurface: '#39332C',
+  topicText: '#D4C3AD',
+  iconSurface: '#262D28',
   overlay: 'rgba(0, 0, 0, 0.34)',
   disabled: '#69706C',
 } as const;

@@ -1,7 +1,9 @@
 # AGENTS.md
 
 > 适用对象：Codex / AI coding agent  
-> 项目：Wish Map / 心愿地图  
+> 项目：**Drift / 所见**  
+> 英文副标题：**Your Own Cultural Atlas**  
+> 中文副标题：**你的私人文化地图**  
 > 状态：V1 开发规则
 
 ---

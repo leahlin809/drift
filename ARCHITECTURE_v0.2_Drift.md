@@ -1,6 +1,9 @@
 # ARCHITECTURE.md
 
-> 版本：v0.1  
+> 产品：**Drift / 所见**  
+> Tagline：**Your Own Cultural Atlas / 你的私人文化地图**
+
+> 版本：v0.2  
 > 平台：iPhone-first  
 > 开发环境：Windows  
 > 状态：V1 技术架构基线
@@ -396,7 +399,7 @@ V1：
 可以根据 Expo Router 实际初始化结构微调，但职责保持清晰。
 
 ```text
-wish-map/
+drift/
 ├─ app/
 │  ├─ (tabs)/
 │  │  ├─ map.tsx
